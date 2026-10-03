@@ -1,0 +1,10 @@
+node_modules/
+src/
+src-tauri/
+dist/
+.env
+.env.*
+*.key
+*.pdb
+*.log
+*.map
