@@ -8,7 +8,7 @@ This repository contains compiled distribution files. The application source is 
 
 Version **0.1.0**, Windows x64:
 
-- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.0/Bindia%20Admin_0.1.0_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
+- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.0/Bindia.Admin_0.1.0_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
 - [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.0/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
 - [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.0/SHA256SUMS.txt).
 
@@ -25,7 +25,7 @@ Closing the window keeps the app running in the background. Click the Bindia ico
 Compare the result of this PowerShell command with `SHA256SUMS.txt`:
 
 ```powershell
-Get-FileHash -LiteralPath '.\Bindia Admin_0.1.0_x64-setup.exe' -Algorithm SHA256
+Get-FileHash -LiteralPath '.\Bindia.Admin_0.1.0_x64-setup.exe' -Algorithm SHA256
 ```
 
 Only installers, compiled executables, checksums, and distribution documentation belong in this repository. Keep previous releases in their version directories.
