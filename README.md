@@ -6,19 +6,31 @@ This repository contains compiled distribution files. The application source is 
 
 ## Downloads
 
-Version **0.1.20**, Windows x64:
+Version **0.1.21**, Windows x64:
 
-- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.20/Bindia.Admin_0.1.20_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
-- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.20/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
-- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.20/SHA256SUMS.txt).
+- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.21/Bindia.Admin_0.1.21_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
+- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.21/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
+- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.21/SHA256SUMS.txt).
 
-The same files are stored in [builds/windows/v0.1.20](builds/windows/v0.1.20). Previous versions remain in their own directories and releases.
+The same files are stored in [builds/windows/v0.1.21](builds/windows/v0.1.21). Previous versions remain in their own directories and releases.
 
 Dates default to **dd-mm-YYYY**. In **Settings → Date and time**, choose your preferred date format and a 12-hour or 24-hour clock. Preferences apply immediately and remain saved on this device.
 
 In **Staff**, click **Download Excel** to save all matching staff to Downloads using the current search, status filter and sort order. The workbook follows your date/time settings and requires staff-view permission.
 
 Drag a JPG, PNG or WebP photo into the profile photo area, preview it, then click **Upload photo**. In **Docs** and **Admin Docs**, drop up to ten supported documents (20 MB each) to upload immediately. Uploads preserve unsaved profile details. The backend update also fixes a first photo upload being blocked by earlier profile edits.
+
+## Improvements in 0.1.21
+
+- Voice messages use a compact waveform player with seek, duration, speed controls and download.
+- A searchable emoji picker inserts emojis into the message composer; drag files into the active chat to attach them for review before sending.
+- Image messages show thumbnails and open an in-app viewer with zoom, rotation and download.
+- Shared links show page titles and descriptions. YouTube video cards open a player inside Bindia, supporting watch links, Shorts, live links and timestamps.
+- New messages and incoming calls show Windows notifications while Bindia is minimized, behind another app or closed to the tray. Clicking an alert restores the conversation. The sound switch controls native alert sounds too.
+
+Deploy backend **13.46.143**, refresh route/configuration caches and keep the chat preview queue worker running. No database migration is required. Windows notifications must be enabled for Bindia Admin. Closing to the tray keeps the app connected; choosing **Exit** fully quits and stops alerts.
+
+Validation: the production frontend and signed Windows x64 installer built successfully. 39 frontend tests, 21 native tests and 126 backend chat/preview tests passed. Installer signature, signed version, executable version and SHA-256 checksums verified; tampered installer bytes rejected. Local fixtures checked image viewing/download, page cards, YouTube popup lifecycle/timestamps and emoji selection. Live Windows notification delivery, real YouTube playback and installer execution have not been exercised.
 
 ## Improvements in 0.1.20
 
