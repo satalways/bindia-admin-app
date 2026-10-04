@@ -1,0 +1,11 @@
+{
+  "version": "0.1.5",
+  "notes": "Update Bindia Admin directly from the app with download progress, signed verification, and automatic restart.",
+  "pub_date": "2026-10-04T08:19:05.318Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRQndtQ09LSnFXU1RYVEFsRzgzTUlHU1IrQ0dxZEdkeU5tcU5lOURZQi9nRzBpSm84MW13NzQyM2ZjOU9zWENnVHQxMUl5MFYxbkZLcldZYkNPNmpqU2NQYUxDLzNHcmc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTAxODg5CWZpbGU6QmluZGlhIEFkbWluXzAuMS41X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuNQpzTi8wL2dQVHpydjRvRm5GdU1lVzhJdWVsYXJmYWlOM0pTR2pSc1FXTVBEV1BTSDA5bkRseWhOQmVtcnNFZytqUldJaGxYaWpGSWhlUUxIcytYVGhCQT09Cg==",
+      "url": "https://github.com/satalways/bindia-admin-app/releases/download/v0.1.5/Bindia.Admin_0.1.5_x64-setup.exe"
+    }
+  }
+}

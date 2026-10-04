@@ -6,13 +6,13 @@ This repository contains compiled distribution files. The application source is 
 
 ## Downloads
 
-Version **0.1.4**, Windows x64:
+Version **0.1.5**, Windows x64:
 
-- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.4/Bindia.Admin_0.1.4_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
-- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.4/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
-- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.4/SHA256SUMS.txt).
+- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.5/Bindia.Admin_0.1.5_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
+- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.5/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
+- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.5/SHA256SUMS.txt).
 
-The same files are stored in [builds/windows/v0.1.4](builds/windows/v0.1.4). Previous versions remain in their own directories and releases.
+The same files are stored in [builds/windows/v0.1.5](builds/windows/v0.1.5). Previous versions remain in their own directories and releases.
 
 ## Using the app
 
@@ -22,14 +22,16 @@ Staff contact information can be edited when your account has both staff-view an
 
 Closing the window keeps the app running in the background. Click the Bindia icon in the Windows system tray beside the clock to reopen it, or right-click it and choose **Open Bindia Admin**. Choose **Exit** to quit completely. Windows may place the icon inside its hidden-icons menu. Opening the app again restores the existing instance.
 
-From version 0.1.1, the app checks this repository's latest release at startup and every six hours. It announces a newer stable Windows version with a download button. You can also use **Settings → Check for updates**. Download the installer, exit the running app using the tray menu, and run the installer. Existing 0.1.0 installations need this first upgrade manually.
+From version 0.1.5, click **Update now** in the update notification or Settings to update directly from Bindia. Save any open edits first. The app shows download progress, verifies the signed installer and version, then closes for installation and reopens automatically. Network or verification failures can be retried. It checks for new versions at startup and every six hours; **Settings → Check for updates** checks immediately.
+
+Versions 0.1.4 and earlier need one manual upgrade to 0.1.5: download this installer, choose **Exit** from the old app's tray menu, then install. Future updates run inside the app.
 
 ## Verify a download
 
 Compare the result of this PowerShell command with `SHA256SUMS.txt`:
 
 ```powershell
-Get-FileHash -LiteralPath '.\Bindia.Admin_0.1.4_x64-setup.exe' -Algorithm SHA256
+Get-FileHash -LiteralPath '.\Bindia.Admin_0.1.5_x64-setup.exe' -Algorithm SHA256
 ```
 
-Only installers, compiled executables, checksums, and distribution documentation belong in this repository. Keep previous releases in their version directories.
+Only installers, compiled executables, updater signatures/manifests, checksums, and distribution documentation belong in this repository. Keep previous releases in their version directories.
