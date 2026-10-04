@@ -1,0 +1,11 @@
+{
+  "version": "0.1.10",
+  "notes": "Staff user IDs now appear beside names as small, muted #ID text in the staff list and editor title. Uses existing backend IDs; sorting, permissions, saving and protections against accidental editor dismissal are retained. No backend update is required.",
+  "pub_date": "2026-10-04T09:33:46.287Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRQndtQ09LSnFXU1YyRjFOdVpRbGhhYmdQR2RYTFVCYzgwL2I1eWFHcUx1MURPLzZ4OU1sZlFPOXZrUkVYU09ldjJ5aFJoUzhvYnF3ZHYzVWthektKYk9jWTZNeEhzdEFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTA2NDA4CWZpbGU6QmluZGlhIEFkbWluXzAuMS4xMF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC4xLjEwCkdCcllnbmdzUjFudDRUV1hJb3ZDOXZ4ckNMeGRsTUFyL0lPbytDTDVLT1EvVUtFYzkyUTduVXIrT0g2ZTZMclNFQ3A4Y1FmeFB4NGxMbTBhelgwM0FBPT0K",
+      "url": "https://github.com/satalways/bindia-admin-app/releases/download/v0.1.10/Bindia.Admin_0.1.10_x64-setup.exe"
+    }
+  }
+}
