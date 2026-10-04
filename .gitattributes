@@ -1,0 +1,5 @@
+# Keep published release files byte-for-byte identical to their checksums.
+builds/windows/*/*.exe binary
+builds/windows/*/*.sig -text
+builds/windows/*/latest.json -text
+builds/windows/*/SHA256SUMS.txt -text

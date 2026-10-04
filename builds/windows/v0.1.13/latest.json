@@ -1,0 +1,11 @@
+{
+  "version": "0.1.13",
+  "notes": "Dates default to dd-mm-YYYY with format settings; staff Excel downloads; drag-and-drop photo and document uploads; fixed first-photo upload rate limits. Requires backend 13.46.134.",
+  "pub_date": "2026-10-04T11:37:50.339Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRQndtQ09LSnFXU1JXQ3V6VW1VNnFkN091WGhodHJSd29ubEZJOUtiQXNxb1JtTU5xZjVkdDFRYXBnaHpPZmtjYllGbUd0OEZjMlNsZjMyMEtnWUxhR1BUSi9iUE83Q1FjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTEzODU1CWZpbGU6QmluZGlhIEFkbWluXzAuMS4xM194NjQtc2V0dXAuZXhlCXZlcnNpb246MC4xLjEzCkRlSW51M0RDRmcvbFRoMzFMdlh1eGpGK0pTVWQ5QWgyaWJnd0hVWHpTUTdRR0ZiUHFyWXVGZDViUytFYkJpcjhIWmZqWVpUeFpXT0FvcWxSaUIrdkJBPT0K",
+      "url": "https://github.com/satalways/bindia-admin-app/releases/download/v0.1.13/Bindia.Admin_0.1.13_x64-setup.exe"
+    }
+  }
+}
