@@ -6,19 +6,25 @@ This repository contains compiled distribution files. The application source is 
 
 ## Downloads
 
-Version **0.1.15**, Windows x64:
+Version **0.1.16**, Windows x64:
 
-- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.15/Bindia.Admin_0.1.15_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
-- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.15/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
-- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.15/SHA256SUMS.txt).
+- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.16/Bindia.Admin_0.1.16_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
+- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.16/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
+- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.16/SHA256SUMS.txt).
 
-The same files are stored in [builds/windows/v0.1.15](builds/windows/v0.1.15). Previous versions remain in their own directories and releases.
+The same files are stored in [builds/windows/v0.1.16](builds/windows/v0.1.16). Previous versions remain in their own directories and releases.
 
 Dates default to **dd-mm-YYYY**. In **Settings → Date and time**, choose your preferred date format and a 12-hour or 24-hour clock. Preferences apply immediately and remain saved on this device.
 
 In **Staff**, click **Download Excel** to save all matching staff to Downloads using the current search, status filter and sort order. The workbook follows your date/time settings and requires staff-view permission.
 
 Drag a JPG, PNG or WebP photo into the profile photo area, preview it, then click **Upload photo**. In **Docs** and **Admin Docs**, drop up to ten supported documents (20 MB each) to upload immediately. Uploads preserve unsaved profile details. The backend update also fixes a first photo upload being blocked by earlier profile edits.
+
+## Attendance improvements in 0.1.16
+
+The date range picker now offers the same eight web presets, including PK month ranges, plus custom dates. Row actions, attendance tools and bulk actions use compact menus with icons. Click an employee name to filter attendance to that employee while keeping your other filters.
+
+This release requires no additional backend changes.
 
 ## Using the app
 
@@ -57,7 +63,7 @@ Versions 0.1.4 and earlier need one manual upgrade to the latest version: downlo
 Compare the result of this PowerShell command with `SHA256SUMS.txt`:
 
 ```powershell
-Get-FileHash -LiteralPath '.\Bindia.Admin_0.1.15_x64-setup.exe' -Algorithm SHA256
+Get-FileHash -LiteralPath '.\Bindia.Admin_0.1.16_x64-setup.exe' -Algorithm SHA256
 ```
 
 Only installers, compiled executables, updater signatures/manifests, checksums, and distribution documentation belong in this repository. Keep previous releases in their version directories.
