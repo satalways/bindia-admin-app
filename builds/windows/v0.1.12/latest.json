@@ -1,0 +1,11 @@
+{
+  "version": "0.1.12",
+  "notes": "Adds My profile for personal details, email/password and photo changes; expands staff profile fields and document, HR and rating tabs; improves the staff popup scrolling. Requires backend 13.46.133.",
+  "pub_date": "2026-10-04T11:07:03.453Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRQndtQ09LSnFXU1hIam5ORUFRWFVFVy9jYkRCNGpBUDFQYk91aDVwK0FoMjVLNms2bWJuN3oxNng1MldkQmNGWmphZk9NTVBkZWI0MHRJVEEwMU1MM3VUbm5KMWVWWVEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTExOTg3CWZpbGU6QmluZGlhIEFkbWluXzAuMS4xMl94NjQtc2V0dXAuZXhlCXZlcnNpb246MC4xLjEyCjIvQUt4UnJrL21OYnRCMklnOVd1dVh5bVJmQkRkQng3MEdiVVY4WUlNMktPMXhvQU1zNW9IYTJuT21ZRjNXUUtUQTdBZmg1TktmaDZQRWlWYWF6NkRBPT0K",
+      "url": "https://github.com/satalways/bindia-admin-app/releases/download/v0.1.12/Bindia.Admin_0.1.12_x64-setup.exe"
+    }
+  }
+}
