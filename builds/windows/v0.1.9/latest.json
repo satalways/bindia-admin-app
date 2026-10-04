@@ -1,0 +1,11 @@
+{
+  "version": "0.1.9",
+  "notes": "Staff editing stays open when clicking outside the popup or pressing Escape, preserving unsaved contact and security changes. Use Cancel or the close button to dismiss; both are blocked while saving. Security now also has a Cancel button. Successful contact saves still close the editor. No backend update is required.",
+  "pub_date": "2026-10-04T09:21:19.47Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRQndtQ09LSnFXU2RKUlh4SzdQbHcrYjI3WitkWERaRzhwYUE1amNxSFFlRTJPa3ByeWdhOXRSVVJEejJxYXFhSGw4SFpndGQwY1N3cGtvY3NER2dDbmJTL2tZQ3JpUVE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTA1NjQ5CWZpbGU6QmluZGlhIEFkbWluXzAuMS45X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuOQpkbU5Yc0lRSnpCRlRuMzZZeWxOakVhdkp3cTdHM3ZJanpyTGIvSTJ3emNYa0JFNXBNSWlaMEFzTXNZaGtVb0QxL0JrUEtraHhNdU1BM1JhejdjaE9DUT09Cg==",
+      "url": "https://github.com/satalways/bindia-admin-app/releases/download/v0.1.9/Bindia.Admin_0.1.9_x64-setup.exe"
+    }
+  }
+}

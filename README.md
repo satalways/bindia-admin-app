@@ -6,13 +6,13 @@ This repository contains compiled distribution files. The application source is 
 
 ## Downloads
 
-Version **0.1.8**, Windows x64:
+Version **0.1.9**, Windows x64:
 
-- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.8/Bindia.Admin_0.1.8_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
-- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.8/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
-- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.8/SHA256SUMS.txt).
+- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.9/Bindia.Admin_0.1.9_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
+- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.9/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
+- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.9/SHA256SUMS.txt).
 
-The same files are stored in [builds/windows/v0.1.8](builds/windows/v0.1.8). Previous versions remain in their own directories and releases.
+The same files are stored in [builds/windows/v0.1.9](builds/windows/v0.1.9). Previous versions remain in their own directories and releases.
 
 ## Using the app
 
@@ -23,6 +23,8 @@ Staff contact information can be edited when your account has both staff-view an
 The Edit form also includes a Security tab when your account has staff-view permission plus the backend password-change or two-factor-change permission. Password changes require confirmation and the backend strength rules. Email two-factor can be enabled for accounts without an enabled method; the account holder can switch an enabled method to email after confirming their current password. Enabled methods are preserved for other staff, and disabling two-factor remains prohibited by backend policy. Successful security changes sign the target account out of its existing app sessions. Deploy the matching desktop security API before upgrading production clients.
 
 In **Settings**, turn on **Run application on Windows startup** to open Bindia automatically when you sign in to Windows. Startup is off until you enable it. The option reads the Windows setting, respects Task Manager changes, and can be turned off at any time. Enable it from the installed app so Windows uses a stable executable location. Automatic startup opens the app maximized. No backend change is required.
+
+Staff editing stays open when clicking outside the popup or pressing Escape. Use **Cancel** or the close button to discard edits and dismiss it; these controls are blocked while saving. Both Contact information and Security tabs provide Cancel. Successful contact saves still close the editor.
 
 Closing the window keeps the app running in the background. Click the Bindia icon in the Windows system tray beside the clock to reopen it, or right-click it and choose **Open Bindia Admin**. Choose **Exit** to quit completely. Windows may place the icon inside its hidden-icons menu. Opening the app again restores the existing instance.
 
@@ -35,7 +37,7 @@ Versions 0.1.4 and earlier need one manual upgrade to the latest version: downlo
 Compare the result of this PowerShell command with `SHA256SUMS.txt`:
 
 ```powershell
-Get-FileHash -LiteralPath '.\Bindia.Admin_0.1.8_x64-setup.exe' -Algorithm SHA256
+Get-FileHash -LiteralPath '.\Bindia.Admin_0.1.9_x64-setup.exe' -Algorithm SHA256
 ```
 
 Only installers, compiled executables, updater signatures/manifests, checksums, and distribution documentation belong in this repository. Keep previous releases in their version directories.
