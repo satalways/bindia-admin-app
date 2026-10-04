@@ -1,0 +1,2 @@
+93ca59574cf3c5836a11e5be45d4fac1768d2ec6405a790f1ab758f564b23751  Bindia.Admin_0.1.4_x64-setup.exe
+a8fd36a7f814918feb304f633e25becf202e7ed4cf0ffd2dae8ca213228b5d8f  bindia-admin-desktop.exe
