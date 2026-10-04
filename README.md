@@ -6,19 +6,30 @@ This repository contains compiled distribution files. The application source is 
 
 ## Downloads
 
-Version **0.1.21**, Windows x64:
+Version **0.1.22**, Windows x64:
 
-- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.21/Bindia.Admin_0.1.21_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
-- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.21/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
-- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.21/SHA256SUMS.txt).
+- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.22/Bindia.Admin_0.1.22_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
+- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.22/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
+- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.22/SHA256SUMS.txt).
 
-The same files are stored in [builds/windows/v0.1.21](builds/windows/v0.1.21). Previous versions remain in their own directories and releases.
+The same files are stored in [builds/windows/v0.1.22](builds/windows/v0.1.22). Previous versions remain in their own directories and releases.
 
 Dates default to **dd-mm-YYYY**. In **Settings → Date and time**, choose your preferred date format and a 12-hour or 24-hour clock. Preferences apply immediately and remain saved on this device.
 
 In **Staff**, click **Download Excel** to save all matching staff to Downloads using the current search, status filter and sort order. The workbook follows your date/time settings and requires staff-view permission.
 
 Drag a JPG, PNG or WebP photo into the profile photo area, preview it, then click **Upload photo**. In **Docs** and **Admin Docs**, drop up to ten supported documents (20 MB each) to upload immediately. Uploads preserve unsaved profile details. The backend update also fixes a first photo upload being blocked by earlier profile edits.
+
+## Improvements in 0.1.22
+
+- Your sent-message menu supports editing text and attachment captions. Saved changes show an Edited label and preserve your unsent draft.
+- Delete for everyone follows the backend's existing rule: only your unread normal messages in private chats. A deleted-message placeholder remains for replies; attachments and reactions are removed.
+- The page title/subtitle has been removed, giving chat 100 pixels more height. Notification sound controls sit beside Chats.
+- Record voice messages from the mic icon beside emoji and attachment icons. The timer, cancel and Stop & preview controls remain available while recording.
+
+Requires backend **13.46.146** and the chat message changes migration before message actions are enabled. Deploy the backend update and refresh route/configuration caches. Sender ownership, conversation scope and current group membership are enforced on the server. Older backends hide unavailable message actions.
+
+Validation: signed Windows x64 installer and production frontend built successfully; 39 frontend tests, 21 native tests and 140 backend chat/preview/Firebase tests passed (945 backend assertions). Installer signature/signed version, executable version and SHA-256 checksums verified; tampered bytes rejected. Local fixtures checked the compact chat layout, synthetic voice recording/cancel/preview, message editing/deletion and draft preservation. Five existing backend framework deprecations remain. Installer execution and live two-user changes were not exercised.
 
 ## Improvements in 0.1.21
 
