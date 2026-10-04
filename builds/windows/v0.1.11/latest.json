@@ -1,0 +1,11 @@
+{
+  "version": "0.1.11",
+  "notes": "Adds permitted staff profile photo selection, preview and separate upload from the contact editor. JPG/PNG/WebP images up to 2 MB and 4096 pixels per side must pass the backend human-face rule. Uploads preserve unsaved contact edits and provide validation/retry/discard controls. Deploy backend commit 553e90a77 to production; no migration is required.",
+  "pub_date": "2026-10-04T09:53:27.232Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRQndtQ09LSnFXU1NaM2hGZ0tWYkJSNmhOTC9IN2tKcXZodmxYMXBRSWZBWEJIRTlGMXp6OG5zd1JLc0duWHRCanllSHl0d0g4UUtmWHgvVWx6N050elpZWjF1ekhIQUFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTA3NTkwCWZpbGU6QmluZGlhIEFkbWluXzAuMS4xMV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC4xLjExCjVuYVVjUnJSbXowNXFUTVpNa3ZMNkVCUUdxUGpKT0NtSVdNa3BsQXV2RTR6VFFEdjJEV2NFQVAyVDlkL1l6OTVSVFhubWovYkkzd08yYm5SUlhPd0NnPT0K",
+      "url": "https://github.com/satalways/bindia-admin-app/releases/download/v0.1.11/Bindia.Admin_0.1.11_x64-setup.exe"
+    }
+  }
+}

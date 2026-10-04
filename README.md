@@ -6,13 +6,13 @@ This repository contains compiled distribution files. The application source is 
 
 ## Downloads
 
-Version **0.1.10**, Windows x64:
+Version **0.1.11**, Windows x64:
 
-- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.10/Bindia.Admin_0.1.10_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
-- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.10/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
-- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.10/SHA256SUMS.txt).
+- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.11/Bindia.Admin_0.1.11_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
+- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.11/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
+- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.11/SHA256SUMS.txt).
 
-The same files are stored in [builds/windows/v0.1.10](builds/windows/v0.1.10). Previous versions remain in their own directories and releases.
+The same files are stored in [builds/windows/v0.1.11](builds/windows/v0.1.11). Previous versions remain in their own directories and releases.
 
 ## Using the app
 
@@ -28,6 +28,8 @@ Staff editing stays open when clicking outside the popup or pressing Escape. Use
 
 Staff user IDs appear beside names as small, muted **#ID** text in the staff list and editor title. No backend update is needed for this display change.
 
+Permitted users can change a staff profile photo from **Edit → Contact information**. Choose a JPG, PNG or WebP photo up to 2 MB and 4096 × 4096 pixels, preview it, and click **Upload photo**. A clear human face is required by the backend. Uploads save separately and preserve unsaved contact fields; a local selection can be discarded or retried. Deploy backend commit **553e90a77** before upgrading production; old servers keep photo controls hidden. No migration is needed.
+
 Closing the window keeps the app running in the background. Click the Bindia icon in the Windows system tray beside the clock to reopen it, or right-click it and choose **Open Bindia Admin**. Choose **Exit** to quit completely. Windows may place the icon inside its hidden-icons menu. Opening the app again restores the existing instance.
 
 From version 0.1.5, click **Update now** in the update notification or Settings to update directly from Bindia. Save any open edits first. The app shows download progress, verifies the signed installer and version, then closes for installation and reopens automatically. Network or verification failures can be retried. It checks for new versions at startup and every six hours; **Settings → Check for updates** checks immediately.
@@ -39,7 +41,7 @@ Versions 0.1.4 and earlier need one manual upgrade to the latest version: downlo
 Compare the result of this PowerShell command with `SHA256SUMS.txt`:
 
 ```powershell
-Get-FileHash -LiteralPath '.\Bindia.Admin_0.1.10_x64-setup.exe' -Algorithm SHA256
+Get-FileHash -LiteralPath '.\Bindia.Admin_0.1.11_x64-setup.exe' -Algorithm SHA256
 ```
 
 Only installers, compiled executables, updater signatures/manifests, checksums, and distribution documentation belong in this repository. Keep previous releases in their version directories.
