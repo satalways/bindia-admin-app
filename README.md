@@ -6,19 +6,28 @@ This repository contains compiled distribution files. The application source is 
 
 ## Downloads
 
-Version **0.1.29**, Windows x64:
+Version **0.1.30**, Windows x64:
 
-- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.29/Bindia.Admin_0.1.29_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
-- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.29/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
-- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.29/SHA256SUMS.txt).
+- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.30/Bindia.Admin_0.1.30_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
+- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.30/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
+- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.30/SHA256SUMS.txt).
 
-The same files are stored in [builds/windows/v0.1.29](builds/windows/v0.1.29). Previous versions remain in their own directories and releases.
+The same files are stored in [builds/windows/v0.1.30](builds/windows/v0.1.30). Previous versions remain in their own directories and releases.
 
 Dates default to **dd-mm-YYYY**. In **Settings → Date and time**, choose your preferred date format and a 12-hour or 24-hour clock. Preferences apply immediately and remain saved on this device.
 
 In **Staff**, click **Download Excel** to save all matching staff to Downloads using the current search, status filter and sort order. The workbook follows your date/time settings and requires staff-view permission.
 
 Drag a JPG, PNG or WebP photo into the profile photo area, preview it, then click **Upload photo**. In **Docs** and **Admin Docs**, drop up to ten supported documents (20 MB each) to upload immediately. Uploads preserve unsaved profile details. The backend update also fixes a first photo upload being blocked by earlier profile edits.
+
+## Improvements in 0.1.30
+
+- Fix My attendance actions returning 404 despite deployed backend endpoints: check-in, check-out, pause and resume now send POST requests from the Windows application. Status continues to use GET.
+- Adds native request-method regression checks for attendance actions, JSON bodies and existing read/write operations.
+
+Uses the existing backend **13.46.156**. No further backend change or migration is required if that version is deployed. Install the updated desktop application to receive this fix.
+
+Validation on 05-10-2026: 46 frontend tests and 24 native tests passed. Production frontend and signed Windows x64 builds passed. The executable reports 0.1.30; installer signature, signed version and copied SHA-256 checksums verified. Altered installer bytes were rejected. Installer execution and real attendance mutations were not performed.
 
 ## Improvements in 0.1.29
 
