@@ -1,0 +1,11 @@
+{
+  "version": "0.1.25",
+  "notes": "Pairs with backend 13.46.151 to fix Cloudflare proxy false blocks. Deploy the backend update and refresh configuration caches; account, two-factor and module permissions remain enforced.",
+  "pub_date": "2026-10-05T07:14:38.887Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRQndtQ09LSnFXU1J6N0MyOFcyWi9iaVM2UUVrYWNHalJEajBpOGhiMXBQMDFETjhzQmlSMGhrRkRCWXR5aFhuZzQza1VDR2RncHZDTUdVa2l1TDdxcGVmV1VYSFRZMlFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTg0NDYwCWZpbGU6QmluZGlhIEFkbWluXzAuMS4yNV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC4xLjI1ClF6bDYvV1FVYTl1dVVXQURmOEtqR3FJb0pheTAwdm9zbDVwdUxoWndEK0dEMU1WN0x2dm52MVBFdDNOek9xQ1Y4Lys0eDFIZVFZOUFUSTd3OUpOQURBPT0K",
+      "url": "https://github.com/satalways/bindia-admin-app/releases/download/v0.1.25/Bindia.Admin_0.1.25_x64-setup.exe"
+    }
+  }
+}
