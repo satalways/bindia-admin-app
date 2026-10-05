@@ -6,19 +6,29 @@ This repository contains compiled distribution files. The application source is 
 
 ## Downloads
 
-Version **0.1.25**, Windows x64:
+Version **0.1.26**, Windows x64:
 
-- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.25/Bindia.Admin_0.1.25_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
-- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.25/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
-- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.25/SHA256SUMS.txt).
+- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.26/Bindia.Admin_0.1.26_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
+- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.26/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
+- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.26/SHA256SUMS.txt).
 
-The same files are stored in [builds/windows/v0.1.25](builds/windows/v0.1.25). Previous versions remain in their own directories and releases.
+The same files are stored in [builds/windows/v0.1.26](builds/windows/v0.1.26). Previous versions remain in their own directories and releases.
 
 Dates default to **dd-mm-YYYY**. In **Settings → Date and time**, choose your preferred date format and a 12-hour or 24-hour clock. Preferences apply immediately and remain saved on this device.
 
 In **Staff**, click **Download Excel** to save all matching staff to Downloads using the current search, status filter and sort order. The workbook follows your date/time settings and requires staff-view permission.
 
 Drag a JPG, PNG or WebP photo into the profile photo area, preview it, then click **Upload photo**. In **Docs** and **Admin Docs**, drop up to ten supported documents (20 MB each) to upload immediately. Uploads preserve unsaved profile details. The backend update also fixes a first photo upload being blocked by earlier profile edits.
+
+## Improvements in 0.1.26
+
+- Orders has a date-range picker with Today, Yesterday, Last 7 Days, Last 30 Days, This Month and Last Month presets, plus custom dates.
+- Ranges include both selected days, follow your saved date format and reset pagination when changed. Clear dates returns to all orders.
+- Search and payment filters work together with the range; existing order permissions remain enforced.
+
+Deploy backend **13.46.152** for date-range filtering before installing this client. No migration is required.
+
+Validation on 05-10-2026: 46 frontend tests, 21 native tests and six focused backend checks (37 assertions) passed. The signed Windows x64 build, executable version, installer signature, signed version and copied SHA-256 checksums verified; altered installer bytes were rejected. Installer execution was not performed.
 
 ## Improvements in 0.1.25
 
