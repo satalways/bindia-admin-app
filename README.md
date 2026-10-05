@@ -6,19 +6,29 @@ This repository contains compiled distribution files. The application source is 
 
 ## Downloads
 
-Version **0.1.22**, Windows x64:
+Version **0.1.23**, Windows x64:
 
-- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.22/Bindia.Admin_0.1.22_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
-- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.22/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
-- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.22/SHA256SUMS.txt).
+- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.23/Bindia.Admin_0.1.23_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
+- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.23/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
+- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.23/SHA256SUMS.txt).
 
-The same files are stored in [builds/windows/v0.1.22](builds/windows/v0.1.22). Previous versions remain in their own directories and releases.
+The same files are stored in [builds/windows/v0.1.23](builds/windows/v0.1.23). Previous versions remain in their own directories and releases.
 
 Dates default to **dd-mm-YYYY**. In **Settings → Date and time**, choose your preferred date format and a 12-hour or 24-hour clock. Preferences apply immediately and remain saved on this device.
 
 In **Staff**, click **Download Excel** to save all matching staff to Downloads using the current search, status filter and sort order. The workbook follows your date/time settings and requires staff-view permission.
 
 Drag a JPG, PNG or WebP photo into the profile photo area, preview it, then click **Upload photo**. In **Docs** and **Admin Docs**, drop up to ten supported documents (20 MB each) to upload immediately. Uploads preserve unsaved profile details. The backend update also fixes a first photo upload being blocked by earlier profile edits.
+
+## Improvements in 0.1.23
+
+- Chat uses the available window width, with smaller left/right outer margins.
+- Paste copied images into the message composer to attach them, then click Send. Your caption stays intact, and normal text paste still works.
+- Pasted images share the existing limits of five attachments and 10 MB per file.
+
+These changes use the existing attachment APIs and require no additional backend deployment or migration. The previous release's message edit/delete actions still require backend 13.46.146 and its migration.
+
+Validation on 05-10-2026: 39 frontend and 21 native tests passed; production frontend and signed Windows installer built successfully. Signature/signed version, executable version and checksums verified, with tampered bytes rejected. Clipboard event fixtures checked image attachment, explicit sending/caption preservation, text paste handling and oversized-image rejection. Native Windows Ctrl+V and installer execution were not exercised.
 
 ## Improvements in 0.1.22
 
