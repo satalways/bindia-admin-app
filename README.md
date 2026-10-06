@@ -6,19 +6,30 @@ This repository contains compiled distribution files. The application source is 
 
 ## Downloads
 
-Version **0.1.33**, Windows x64:
+Version **0.1.34**, Windows x64:
 
-- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.33/Bindia.Admin_0.1.33_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
-- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.33/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
-- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.33/SHA256SUMS.txt).
+- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.34/Bindia.Admin_0.1.34_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
+- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.34/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
+- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.34/SHA256SUMS.txt).
 
-The same files are stored in [builds/windows/v0.1.33](builds/windows/v0.1.33). Previous versions remain in their own directories and releases.
+The same files are stored in [builds/windows/v0.1.34](builds/windows/v0.1.34). Previous versions remain in their own directories and releases.
 
 Dates default to **dd-mm-YYYY**. In **Settings → Date and time**, choose your preferred date format and a 12-hour or 24-hour clock. Preferences apply immediately and remain saved on this device.
 
 In **Staff**, click **Download Excel** to save all matching staff to Downloads using the current search, status filter and sort order. The workbook follows your date/time settings and requires staff-view permission.
 
 Drag a JPG, PNG or WebP photo into the profile photo area, preview it, then click **Upload photo**. In **Docs** and **Admin Docs**, drop up to ten supported documents (20 MB each) to upload immediately. Uploads preserve unsaved profile details. The backend update also fixes a first photo upload being blocked by earlier profile edits.
+
+## Improvements in 0.1.34
+
+- The top avatar and username now open an account menu with My profile and Logout. My profile is removed from the sidebar.
+- Customer contains Orders. Customer, Control, HR and Manager can be expanded or collapsed.
+- My attendance has a clearer shift layout and a live worked-time counter using server timestamps. Breaks are excluded, work time pauses during breaks and stops at checkout.
+- Orders has a redesigned list and summary cards for total sales and paid/unpaid orders. Total sales includes only paid orders across every page matching the current filters.
+
+Deploy backend 13.46.161 for Orders sales totals. No migration is required; production backend deployment is separate. Existing permissions remain enforced.
+
+Validation: 62 frontend tests, 25 native tests and five focused backend tests (38 assertions) passed, with existing PHP deprecations. Production frontend and signed Windows builds passed. Executable version, installer signature, signed version and published checksums verified; altered installer bytes rejected. Fictional-data previews verified the account menu/logout, sidebar collapse, shift pause/resume/checkout, and paid-only sales across pages. Installer execution and real attendance/order mutations were not performed.
 
 ## Improvements in 0.1.33
 
