@@ -1,0 +1,11 @@
+{
+  "version": "0.1.36",
+  "notes": "Reduce sidebar link indentation and give nested navigation labels more room.",
+  "pub_date": "2026-10-06T06:38:49.079Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRQndtQ09LSnFXU1hWdVZYajBtWkdvTHBhblFCNFhGRFNKdk1xMWhIUTlqa2dNTmNUdExlYUtTb25kRys3eWJ6MUw3RmdQL0JzMTZQQ2pGWG9id3drc21vdWFUQUU2QndvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMjY4NzEzCWZpbGU6QmluZGlhIEFkbWluXzAuMS4zNl94NjQtc2V0dXAuZXhlCXZlcnNpb246MC4xLjM2CkhuMFJ3WWVZMUo2NkRZdXh0STRYRXZrM2h3NFZHWkxPUlhiTG92eTJJakRENmx6bWVpbFdaSkFSODBoSkIrbTI1MS83UlpUS1J2R05oMWZCb0JCd0RRPT0K",
+      "url": "https://github.com/satalways/bindia-admin-app/releases/download/v0.1.36/Bindia.Admin_0.1.36_x64-setup.exe"
+    }
+  }
+}
