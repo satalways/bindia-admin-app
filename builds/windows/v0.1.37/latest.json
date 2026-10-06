@@ -1,0 +1,11 @@
+{
+  "version": "0.1.37",
+  "notes": "Add permission-aware Reservations under Customer, unread sidebar badges and Connection details in About. Requires backend 13.46.163.",
+  "pub_date": "2026-10-06T08:51:09.052Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRQndtQ09LSnFXU1RxbU13YnpBejlMMUY3MmZKL09rUUlNOHRKa3YrbGY5akZMcGx3Y1ovUjhrNWpxVWtvMDlHVndPMnd3MkpwbGNzLy90TXlmWWYwUDlQdUhOVnd2UndBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMjc2NjU1CWZpbGU6QmluZGlhIEFkbWluXzAuMS4zN194NjQtc2V0dXAuZXhlCXZlcnNpb246MC4xLjM3Cmx2dGZ2LzFhTlJMTzZYaS85WnNYSXF5Uk5jK0U4WlA2elVwVUE0QzZHMEFtbStwWHJUdVdmVWJRaFp5ZkFMRDR0OWl4dVl4dGZnNHVZdk1jTFZ3dkFBPT0K",
+      "url": "https://github.com/satalways/bindia-admin-app/releases/download/v0.1.37/Bindia.Admin_0.1.37_x64-setup.exe"
+    }
+  }
+}
