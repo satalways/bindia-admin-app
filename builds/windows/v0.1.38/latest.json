@@ -1,0 +1,11 @@
+{
+  "version": "0.1.38",
+  "notes": "Remove worked-time displays from My attendance and the Attendance list, details and editor. Break time, total shift time, shift controls and existing permissions remain available. The My attendance summary layout is simplified.\n\nThis display-only update uses the existing backend. No additional backend deployment or migration is required.\n\nValidation: 78 frontend tests and 28 native tests passed. Fictional-data previews verified attendance actions, error recovery, the revised summary and the 900-pixel layout. Production frontend and signed Windows builds passed. Executable version, installer signature and signed version verified; altered installer bytes were rejected. SHA-256 checksums accompany the final packaged files. Installer execution was not performed.",
+  "pub_date": "2026-10-07T11:11:14.003Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRQndtQ09LSnFXU1J0TUduUURzSC91cFNIRHhLN3c5TFR1TUhZWEhEc291U3p0VXZBUnl1WStJWXZDbnppNldQS2JHYVpWZmtIZFY2M3UwdVZGSElLd0xDclpLTko5UUFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzcxNDM3CWZpbGU6QmluZGlhIEFkbWluXzAuMS4zOF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC4xLjM4CmhHVGQzcnIvdlJ3TUp5aTFQdHljK29PWDhDcGh6RjRzTUJrNnhpYS83Wk1qbm8rRVpWaVg4WlNhbk5ZdXp0RVBoTzRHdWpDdll6bC9FNTY1dGtFNkJRPT0K",
+      "url": "https://github.com/satalways/bindia-admin-app/releases/download/v0.1.38/Bindia.Admin_0.1.38_x64-setup.exe"
+    }
+  }
+}
