@@ -6,19 +6,29 @@ This repository contains compiled distribution files. The application source is 
 
 ## Downloads
 
-Version **0.1.40**, Windows x64:
+Version **0.1.41**, Windows x64:
 
-- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.40/Bindia.Admin_0.1.40_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
-- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.40/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
-- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.40/SHA256SUMS.txt).
+- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.41/Bindia.Admin_0.1.41_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
+- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.41/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
+- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.41/SHA256SUMS.txt).
 
-The same files are stored in [builds/windows/v0.1.40](builds/windows/v0.1.40). Previous version directories and GitHub releases are preserved.
+The same files are stored in [builds/windows/v0.1.41](builds/windows/v0.1.41). Previous version directories and GitHub releases are preserved.
 
 Dates default to **dd-mm-YYYY**. In **Settings → Date and time**, choose your preferred date format and a 12-hour or 24-hour clock. Preferences apply immediately and remain saved on this device.
 
 In **Staff**, click **Download Excel** to save all matching staff to Downloads using the current search, status filter and sort order. The workbook follows your date/time settings and requires staff-view permission.
 
 Drag a JPG, PNG or WebP photo into the profile photo area, preview it, then click **Upload photo**. In **Docs** and **Admin Docs**, drop up to ten supported documents (20 MB each) to upload immediately. Uploads preserve unsaved profile details. The backend update also fixes a first photo upload being blocked by earlier profile edits.
+
+## Improvements in 0.1.41
+
+Redesign the overview with a greeting panel, clearer daily totals, permission-aware module shortcuts and a personal My day panel. Adapt the layout to narrow windows and keep existing backend access gates.
+
+Text messages appear immediately while sending continues in the background. Keep the composer ready for the next message, show a quiet clock until confirmation, and retain failed messages with an error icon and Retry action. Preserve pending sends across conversation switches and reuse the original send identifier on retry. Attachments retain their existing upload flow.
+
+Uses the existing backend 13.46.170. No additional backend deployment or migration is required for this release.
+
+Validation on 07-10-2026: 107 frontend tests and 29 native Windows tests passed. Fictional-data browser checks verified the overview at desktop/narrow sizes and restricted access, plus immediate text display, rapid background sends, conversation switches, inline failures, retry identifiers and confirmation without duplicate bubbles. Production frontend and signed Windows builds passed. Executable version, installer signature, signed update version and SHA-256 checksums verified; altered installer bytes rejected. Installer execution was not performed.
 
 ## Improvements in 0.1.40
 

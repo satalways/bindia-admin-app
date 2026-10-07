@@ -1,0 +1,11 @@
+{
+  "version": "0.1.41",
+  "notes": "Redesign the overview with a greeting panel, clearer daily totals, permission-aware module shortcuts and a personal My day panel. Adapt the layout to narrow windows and keep existing backend access gates.\n\nText messages appear immediately while sending continues in the background. Keep the composer ready for the next message, show a quiet clock until confirmation, and retain failed messages with an error icon and Retry action. Preserve pending sends across conversation switches and reuse the original send identifier on retry. Attachments retain their existing upload flow.\n\nUses the existing backend 13.46.170. No additional backend deployment or migration is required for this release.\n\nValidation on 07-10-2026: 107 frontend tests and 29 native Windows tests passed. Fictional-data browser checks verified the overview at desktop/narrow sizes and restricted access, plus immediate text display, rapid background sends, conversation switches, inline failures, retry identifiers and confirmation without duplicate bubbles. Production frontend and signed Windows builds passed. Executable version, installer signature, signed update version and SHA-256 checksums verified; altered installer bytes rejected. Installer execution was not performed.",
+  "pub_date": "2026-10-07T18:28:52.727Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRQndtQ09LSnFXU1VORzdxZS8rVE52UkRCSThFTHdRVTdPRllFYlhSeXYwTHZQY3lYcW9ZRmpLdzhqRFJpeE9zek0ybG1PRTdVSm5xMVdzc1ZVb3c1dU1ENU5EcHd2cFFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzk3NzAxCWZpbGU6QmluZGlhIEFkbWluXzAuMS40MV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC4xLjQxCkVBc25haG1oUGpFdURWME5NNnlXcUFYVTRWMmFENzkvQWI1Y3dmNmowQWsxYWhHeFU0ajFFUHBBTGlzc2tHdUJlbitrZk55V0pzaFEzZ2RrZHJPZkFRPT0K",
+      "url": "https://github.com/satalways/bindia-admin-app/releases/download/v0.1.41/Bindia.Admin_0.1.41_x64-setup.exe"
+    }
+  }
+}
