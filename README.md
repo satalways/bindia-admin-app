@@ -12,7 +12,7 @@ Version **0.1.38**, Windows x64:
 - [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.38/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
 - [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.38/SHA256SUMS.txt).
 
-The same files are stored in [builds/windows/v0.1.38](builds/windows/v0.1.38). Previous versions remain in their own directories and releases.
+The same files are stored in [builds/windows/v0.1.38](builds/windows/v0.1.38). Only the latest release files are retained in this checkout and GitHub Releases; earlier changes remain in Git history.
 
 Dates default to **dd-mm-YYYY**. In **Settings → Date and time**, choose your preferred date format and a 12-hour or 24-hour clock. Preferences apply immediately and remain saved on this device.
 

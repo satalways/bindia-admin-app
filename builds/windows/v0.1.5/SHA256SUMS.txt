@@ -1,4 +1,0 @@
-3a8177892ee5b102cf191b908099e73f9d764f70e75e9424fdf07f525097d2d9  Bindia.Admin_0.1.5_x64-setup.exe
-c74ecc567c5417b19f5f644a6bed72e10dd6ffff654ebd1f55a4d299a4ebd186  Bindia.Admin_0.1.5_x64-setup.exe.sig
-9a445f8b7b790eb46053dbf606ad35ab7958116ae323429e81f3d2ace4064f8b  bindia-admin-desktop.exe
-0931318ec9a0fcf7373ec0e5d426b8dfcd5b308282f091fd5a80fb6f33ca5afe  latest.json
