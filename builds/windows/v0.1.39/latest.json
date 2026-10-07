@@ -1,0 +1,11 @@
+{
+  "version": "0.1.39",
+  "notes": "Improve the chat workspace with centered messages and composer, clearer text, quieter colors, compact bubbles and a shorter header. Add recent conversations, a searchable New chat directory, saved resizable widths and collapsible navigation. Clarify notification sound controls, attachment details and separate image preview/download actions, and accessible message status tooltips and failed-send notices that retain drafts. Add searchable call history with a Chats/Calls switch and links back to each conversation.\n\nRequires backend 13.46.169 deployed with the desktop chat controller and routes. This adds call-history access and conversation timestamps under the existing active-account/contact and group-membership rules. No database migration is required. Backend production deployment is separate.\n\nValidation: 90 frontend tests, 28 native tests and 27 backend chat tests (243 assertions) passed. Fictional-data browser checks verified saved layouts, attachment actions, status accessibility, retry protection across view changes, and call-history search/pagination. Signed Windows installer and executable version, update signature and SHA-256 checksums verified. Installer execution was not performed. Existing backend PHP deprecations remain.",
+  "pub_date": "2026-10-07T14:00:41.492Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRQndtQ09LSnFXU2ZNT1NFWE1oOW84MXdUZjFWZ1E3Ujk4bE5pTXA4ZUpIblJ5MmNMNFFhVkFyMDVrOUZlcHNxbTEzdVdXcFBrSFd5RlBpbGJsRHhyVXBpbTVESTd4NlE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzgxNjAxCWZpbGU6QmluZGlhIEFkbWluXzAuMS4zOV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC4xLjM5CkxGRG5nQlBIYmh5bExOajB2bVQ1MDRsT3JtU2FXTzNBdEM2UFNxeWpMeXBwT0ZKUlNSQXZqUVUxWXN1QjZEeTRiaDZUQnhKaGFGSmVKRmhMRjA2YURBPT0K",
+      "url": "https://github.com/satalways/bindia-admin-app/releases/download/v0.1.39/Bindia.Admin_0.1.39_x64-setup.exe"
+    }
+  }
+}

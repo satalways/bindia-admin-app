@@ -6,19 +6,27 @@ This repository contains compiled distribution files. The application source is 
 
 ## Downloads
 
-Version **0.1.38**, Windows x64:
+Version **0.1.39**, Windows x64:
 
-- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.38/Bindia.Admin_0.1.38_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
-- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.38/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
-- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.38/SHA256SUMS.txt).
+- [Windows installer](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.39/Bindia.Admin_0.1.39_x64-setup.exe) — recommended; installs for the current user and sets up WebView2 when needed.
+- [Standalone executable](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.39/bindia-admin-desktop.exe) — requires Microsoft Edge WebView2 Runtime already installed.
+- [SHA-256 checksums](https://github.com/satalways/bindia-admin-app/releases/download/v0.1.39/SHA256SUMS.txt).
 
-The same files are stored in [builds/windows/v0.1.38](builds/windows/v0.1.38). Only the latest release files are retained in this checkout and GitHub Releases; earlier changes remain in Git history.
+The same files are stored in [builds/windows/v0.1.39](builds/windows/v0.1.39). Previous version directories and GitHub releases are preserved.
 
 Dates default to **dd-mm-YYYY**. In **Settings → Date and time**, choose your preferred date format and a 12-hour or 24-hour clock. Preferences apply immediately and remain saved on this device.
 
 In **Staff**, click **Download Excel** to save all matching staff to Downloads using the current search, status filter and sort order. The workbook follows your date/time settings and requires staff-view permission.
 
 Drag a JPG, PNG or WebP photo into the profile photo area, preview it, then click **Upload photo**. In **Docs** and **Admin Docs**, drop up to ten supported documents (20 MB each) to upload immediately. Uploads preserve unsaved profile details. The backend update also fixes a first photo upload being blocked by earlier profile edits.
+
+## Improvements in 0.1.39
+
+Improve the chat workspace with centered messages and composer, clearer text, quieter colors, compact bubbles and a shorter header. Add recent conversations, a searchable New chat directory, saved resizable widths and collapsible navigation. Clarify notification sound controls, attachment details and separate image preview/download actions, and accessible message status tooltips and failed-send notices that retain drafts. Add searchable call history with a Chats/Calls switch and links back to each conversation.
+
+Requires backend 13.46.169 deployed with the desktop chat controller and routes. This adds call-history access and conversation timestamps under the existing active-account/contact and group-membership rules. No database migration is required. Backend production deployment is separate.
+
+Validation: 90 frontend tests, 28 native tests and 27 backend chat tests (243 assertions) passed. Fictional-data browser checks verified saved layouts, attachment actions, status accessibility, retry protection across view changes, and call-history search/pagination. Signed Windows installer and executable version, update signature and SHA-256 checksums verified. Installer execution was not performed. Existing backend PHP deprecations remain.
 
 ## Improvements in 0.1.38
 
